@@ -15,11 +15,11 @@
  */
 
  .mdl-layout__header {
-  background-color: #383045;
+  background-color: #59607D;
  }
 
  .mdl-layout__content {
-  background-color:  #1E1B22; 
+  background-color:  #F1F2F6; 
  }
 
 .demo-ribbon {
@@ -74,7 +74,7 @@
   width: 100%;
 }
 .demo-card-wide {
-  background: #392F47;
+  background: #FDFDFE;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -103,7 +103,7 @@
 }
 
 .mdl-card__supporting-text {
-  color: white;
+  color: #687186;
 }
 
 /* Rules for sizing the icon. */
@@ -111,6 +111,16 @@
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+/*.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }*/
+.material-icons.md-dark { color: #8490AB; }
+.material-icons.md-dark.md-inactive { color: blue; }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); } 
 
 
 .mdl-icon-position {
@@ -122,4 +132,13 @@
     text-align: center;
     font-size: 29px;
     margin-bottom: 12px;
+}
+.mdl-mini-footer {
+  background-color: #F1F2F6;
+}
+.mdl-grid.full-width {
+  width: 100%
+}
+.mdl-slider__container {
+  width: 100%
 }
