@@ -1,6 +1,10 @@
+**webcar-gui**
+
+	Experimental Web Car Project Design and Server
+
 **Installation**
 
-	npm install --save
+	npm install
 
 
 **How to Run**

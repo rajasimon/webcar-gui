@@ -14,7 +14,3 @@ socket.on('disconnect', function(){});
 $('.media-player').on('click', function() {
 	socket.emit('my event', {data: 'Media button Clicked!'});
 })
-
-$('.phone-event').on('click', function() {
-	alert("Phone Clicked")
-})
