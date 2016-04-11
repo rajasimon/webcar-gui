@@ -1,4 +1,4 @@
-var socket = io('http://localhost:5000');
+var socket = io('http://localhost');
 
 // Connect My event
 socket.on('connect', function(){
@@ -11,6 +11,10 @@ socket.on('disconnect', function(){});
 
 
 // Media player
-$('.meida-player').on('click', function() {
+$('.media-player').on('click', function() {
 	socket.emit('my event', {data: 'Media button Clicked!'});
+})
+
+$('.phone-event').on('click', function() {
+	alert("Phone Clicked")
 })
