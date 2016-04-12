@@ -7,7 +7,8 @@ var io = require('socket.io').listen(server);
 
 // Running port ( in this case localhost)
 server.listen(80);
-
+// tell the user, server is ready and serving...
+console.log('Server is running on localhost');
 // Static
 app.use('/static', express.static(__dirname + '/public'));
 

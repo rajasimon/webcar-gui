@@ -1,8 +1,12 @@
 {
-  "name": "node-server",
+  "name": "webcar-gui",
   "version": "1.0.0",
   "description": "Experiment webcar project",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajasimon/webcar-gui.git"
+  },
   "dependencies": {
     "express": "^4.13.4",
     "socket.io": "^1.4.5"
@@ -14,3 +18,4 @@
   "author": "Raja Simon",
   "license": "ISC"
 }
+

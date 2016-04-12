@@ -1,12 +1,7 @@
-**webcar-gui**
+**Webcar-gui**
 
-	Experimental Web Car Project Design and Server
-
-**Installation**
-
-	npm install
-
+	Experimental Web Car Project
 
 **How to Run**
 
-	nodejs app.js
+    ./init.sh
