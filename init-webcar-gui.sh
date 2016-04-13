@@ -10,13 +10,13 @@ curdir=$PWD
 
 # Start the service FOO
 start() {
-	initlog -c "echo -n Starting webcar-gui server: "
+	logger "echo -n Starting webcar-gui server: "
 
 	#echo "webcar-gui init script start"
 	#echo "Checking npm modules"
 	cd /usr/share/webcar-gui
 	npm install --save
-	initlog -c "echo -n npm module is ready and starting the nodejs server"
+	logger "echo -n npm module is ready and starting the nodejs server"
 	nodejs webcar-gui.js &
 	cd $curdir
 
@@ -28,9 +28,9 @@ start() {
 
 # Restart the service webcar-gui
 stop() {
-	initlog -c "echo -n Stopping webcar-gui server: "
+	logger "echo -n Stopping webcar-gui server: "
 	#killproc webcar-gui
-	initlog -c "Can't restart webcar-gui, as the design is not in place!"
+	logger "Can't restart webcar-gui, as the design is not in place!"
 	### Now, delete the lock file ###
 	rm -f /var/lock/subsys/webcar-gui
 	echo
