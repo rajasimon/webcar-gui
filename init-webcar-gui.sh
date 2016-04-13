@@ -17,7 +17,7 @@ start() {
 	cd /usr/share/webcar-gui
 	npm install --save
 	logger "echo -n npm module is ready and starting the nodejs server"
-	nodejs webcar-gui.js &
+	node webcar-gui.js &
 	cd $curdir
 
 	### Create the lock file ###
@@ -45,7 +45,7 @@ case "$1" in
 		stop
 		;;
 	status)
-		status FOO
+		status webcar-gui
 		;;
 	restart|reload|condrestart)
 		stop
