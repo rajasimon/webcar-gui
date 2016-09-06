@@ -1,4 +1,4 @@
 # Webcar-gui
 
-	Experimental Web Car Project
+	Web Car Project
 
